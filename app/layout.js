@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
       <body>
         <CartProvider>
           <NavBar />
-          <main className="container mx-auto p-6">
+          <main className="container mx-auto p-6 mt-20">
             {children}
           </main>
         </CartProvider>

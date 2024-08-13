@@ -14,7 +14,7 @@ const ProductCard = ({ product }) => {
     return (
         <div className="p-4 flex flex-col border rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300 ease-in-out bg-white">
             <img src={product.image} alt={product.title} className="w-full h-56 object-fit" />
-            <div className="flex flex-col flex-grow">
+            <div className="flex flex-col flex-grow mt-2">
                 <h3 className="text-lg font-semibold text-gray-800 mb-2 flex-grow">{product.title}</h3>
                 <p className="text-gray-600 mb-4">${product.price.toFixed(2)}</p>
                 <button

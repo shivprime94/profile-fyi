@@ -11,7 +11,16 @@ const CartPage = () => {
 
     if (cart.length === 0) {
         if (showNotification) {
-            return <p className="text-center text-xl mt-10 text-gray-600">Thank you for the purchase.</p>;
+            return (
+                <>
+                    <p className="text-center text-xl mt-10 text-gray-600">Thank you for the purchase.</p>
+                    <Notification
+                        message="You have successfully checked out!"
+                        show={showNotification}
+                        onClose={() => setShowNotification(false)}
+                    />
+                </>
+            );
         }
         return <p className="text-center text-xl mt-10 text-gray-600">Your cart is empty.</p>;
     }

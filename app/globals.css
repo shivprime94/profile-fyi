@@ -2,11 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Global Font and Background */
+/* Global Background and Text Colors */
 body {
-  @apply bg-gray-50 text-gray-900 font-sans leading-relaxed;
+  @apply bg-gradient-to-b from-blue-50 via-white to-gray-100 text-gray-900 font-sans leading-relaxed;
 }
 
+/* Container Styling */
 .container {
   @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
 }
@@ -19,4 +20,9 @@ a {
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
   @apply font-bold tracking-tight text-gray-800;
+}
+
+/* Cards */
+.card {
+  @apply bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 ease-in-out;
 }
